@@ -18,11 +18,22 @@
     font-family: 'Titillium Web','Helvetica Neue','Helvetica',Helvetica,Arial,sans-serif !important;
 }
 
+a, a:visited, a:link, a:active, a:hover {
+    color: white !important;
+}
+
 /* section-featured special class */
 .section-featured h1 {
     text-transform: uppercase;
     font-size: 5em;
     font-weight: 100;
+}
+
+#page-header .entry-title {
+    font-size: 1.2em !important;
+    padding-bottom: 0.3em !important;
+    font-weight: 200 !important;
+    border-bottom: 1px solid rgba(255,255,255,0.2) !important;
 }
 
 /* Disable stuff */
@@ -34,6 +45,9 @@
 button:hover, button:focus, .button:hover, .button:focus, input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover, input[type="button"]:focus, input[type="reset"]:focus, input[type="submit"]:focus, .dl-menuwrapper button {
     background-color: #3c5e7c !important;
 }
+nav ul.menu li .menu-item-title {
+    font-size: 1.7rem !important;
+}
 #site-heading {
     margin-top: 3em;
 }
@@ -42,7 +56,10 @@ button:hover, button:focus, .button:hover, .button:focus, input[type="button"]:h
 }
 
 .dl-menuwrapper li a:hover,
-#site-navigation .menu a:hover
+#site-navigation .menu a:active,
+#site-navigation .menu a:hover,
+#site-navigation .menu .sfHover,
+#site-navigation .menu .sub-menu a
 {
     background-color: #3c5e7c !important;
 }
@@ -56,9 +73,27 @@ button:hover, button:focus, .button:hover, .button:focus, input[type="button"]:h
 #site-navigation .menu-item-title {
     text-transform: lowercase !important;
 }
+#site-navigation .menu .sub-menu {
+
+}
 #page nav ul.menu > li {
     border: 0 !important;
 }
+.submenu-indicator-right .menu-item-has-children:after {
+    display: none !important;
+}
+
+#site-navigation .menu .sub-menu a {
+    font-size: 16px;
+    padding: 1em 0 1em 60px;
+    background-position: 21px center;
+    background-repeat: no-repeat;
+}
+#site-navigation .spotlight a { background-image: url("images/menuicon-spotlight.png"); }
+#site-navigation .who a { background-image: url("images/menuicon-who.png"); }
+#site-navigation .why a { background-image: url("images/menuicon-why.png"); }
+#site-navigation .faq a { background-image: url("images/menuicon-faq.png"); }
+#site-navigation .join a { background-image: url("images/menuicon-join.png"); }
 
 /* SOCIAL */
 ul.social {
