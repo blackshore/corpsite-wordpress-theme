@@ -16,10 +16,14 @@
 
 * {
     font-family: 'Titillium Web','Helvetica Neue','Helvetica',Helvetica,Arial,sans-serif !important;
+    color: white;
 }
 
 a, a:visited, a:link, a:active, a:hover {
     color: white !important;
+}
+#section-header .container {
+    background-color: #2f363c !important;
 }
 
 /* section-featured special class */
