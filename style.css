@@ -40,10 +40,17 @@ button:hover, button:focus, .button:hover, .button:focus, input[type="button"]:h
 #site-navigation {
     margin-top: 5em;
 }
+
 .dl-menuwrapper li a:hover,
-#site-navigation .menu a:hover,
-#site-navigation .menu a:hover div {
+#site-navigation .menu a:hover
+{
     background-color: #3c5e7c !important;
+}
+
+#site-navigation .menu a:link div,
+#site-navigation .menu a:visited div,
+#site-navigation .menu a:hover div
+{
     color: white !important;
 }
 #site-navigation .menu-item-title {
@@ -51,6 +58,28 @@ button:hover, button:focus, .button:hover, .button:focus, input[type="button"]:h
 }
 #page nav ul.menu > li {
     border: 0 !important;
+}
+
+/* SOCIAL */
+ul.social {
+    margin-top: 10em !important;
+    padding-right: 2.5rem;
+}
+ul.social li {
+    display: inline-block;
+    margin-left: 0.625rem;
+}
+ul.social img[title='RSS'] > li {
+   display: none;
+}
+ul.social img[title='Twitter'] {
+    content: url('images/social-twitter.png');
+}
+ul.social img[title='Facebook'] {
+    content: url('images/social-facebook.png');
+}
+ul.social img[title='You Tube'] {
+    content: url('images/social-youtube.png');
 }
 
 /* Desktops */

@@ -21,5 +21,6 @@
     }
     ?>
     <!-- /DEFAULT NAVIGATION -->
+    <?php if (get_option_tree('footer_social') != 'off') : get_template_part( 'theme-core/theme-elements/element', 'getsocial' ); endif; ?>
 </div>
 <!-- /DESKTOP MENU -->
