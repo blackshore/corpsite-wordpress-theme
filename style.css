@@ -59,7 +59,9 @@ nav ul.menu li .menu-item-title {
 #site-navigation .menu a:active,
 #site-navigation .menu a:hover,
 #site-navigation .menu .sfHover,
-#site-navigation .menu .sub-menu a
+#site-navigation .menu .sub-menu a,
+#site-navigation .menu .current-menu-item a,
+#site-navigation .menu .current-page-ancestor a
 {
     background-color: #3c5e7c !important;
 }
