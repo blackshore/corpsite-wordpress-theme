@@ -17,7 +17,27 @@ function custom_meta_boxes_child() {
         'context'   => 'normal',
         'priority'  => 'high',
         'fields'    => array(
-
+            array(
+                'label'       => 'Avatar',
+                'id'          => 'avatar',
+                'type'        => 'upload',
+                'desc'        => 'Add an avatar.',
+                'std'         => '',
+            ),
+            array(
+                'label'       => 'Website URL',
+                'id'          => 'website_link_url',
+                'type'        => 'text',
+                'desc'        => 'URL to link to the talent website.',
+                'std'         => '',
+            ),
+            array(
+                'label'       => 'Website link label',
+                'id'          => 'website_link_label',
+                'type'        => 'text',
+                'desc'        => 'Label of the link to the talent website.',
+                'std'         => '',
+            ),
             array(
                 'label'       => 'Post Layout',
                 'id'          => 'content_layout',

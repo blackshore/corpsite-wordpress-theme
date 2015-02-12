@@ -24,20 +24,28 @@ a, a:visited, a:link, a:active, a:hover {
 
 /* section-featured special class */
 .section-featured h1 {
-    text-transform: uppercase;
-    font-size: 5em;
-    font-weight: 100;
+    margin-top: 0 !important;
+    text-transform: uppercase !important;
+    font-size: 5em !important;
+    font-weight: 100 !important;
+    padding-bottom: 0 !important;
+    border-bottom: none !important;
 }
 
-#page-header .entry-title {
+article h1, .entry-title {
+    margin-top: 3em !important;
+    text-transform: uppercase;
     font-size: 1.2em !important;
-    padding-bottom: 0.3em !important;
     font-weight: 200 !important;
-    border-bottom: 1px solid rgba(255,255,255,0.2) !important;
+    padding-bottom: 0.3em !important;
+    border-bottom: 1px solid rgba(155,155,155,0.4) !important;
 }
 
 /* Disable stuff */
 #primary-toggle, footer {
+    display: none !important;
+}
+.bs-controls {
     display: none !important;
 }
 
@@ -125,6 +133,43 @@ ul.social img[title='Facebook'] {
 }
 ul.social img[title='You Tube'] {
     content: url('images/social-youtube.png');
+}
+
+/* Talent page */
+#spotlight-banner {
+    background: url("images/talent-spotlight.png") no-repeat;
+    display: inline-block;
+    width: 68px;
+    height: 137px;
+    position: absolute;
+    right: 40px;
+    top: 0;
+    z-index: 99;
+}
+.talent-page h1 {
+    max-width: 85%;
+}
+.talent-page header h2 {
+    clear: none !important;
+    float: none !important;
+    margin-top: 1.2em;
+}
+.talent-page header h2 a {
+    display: inline-block;
+    padding-bottom: 0.3em;
+    margin-bottom: 0.3em;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    font-weight: 200 !important;
+    letter-spacing: 1px !important;
+}
+.talent-page header #website-link {
+    text-transform: uppercase;
+}
+.talent-page header #website-link:before {
+    content: "> ";
+}
+.talent-page header {
+    margin: 2em 0;
 }
 
 /* Desktops */
