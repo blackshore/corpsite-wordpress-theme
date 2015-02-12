@@ -100,6 +100,11 @@ nav ul.menu li .menu-item-title {
 .menu-item.faq a { background-image: url("images/menuicon-faq.png") !important; }
 .menu-item.join a { background-image: url("images/menuicon-join.png") !important; }
 
+/* Talent grid */
+.talent-grid-title a {
+    font-size: 1.5em;
+}
+
 /* SOCIAL */
 ul.social {
     margin-top: 10em !important;
