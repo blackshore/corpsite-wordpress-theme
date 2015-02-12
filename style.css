@@ -19,6 +19,10 @@
     color: white;
 }
 
+body, #primary, #secondary, h1, h2, h3, h4, h5, .entry-title, .entry-title a, .breadcrumbs, #page .widget-title {
+    color: white !important;
+}
+
 a, a:visited, a:link, a:active, a:hover {
     color: white !important;
 }
