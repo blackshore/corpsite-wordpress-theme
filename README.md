@@ -1,4 +1,8 @@
-# How to work on the theme locally?
+# blackshore.com Wordpress theme
+
+The theme is based on _Gridcraft WP theme version 1.2.0_.
+
+## How to work on the theme locally?
 
 WARNING: This is still a draft
 
@@ -8,7 +12,7 @@ WARNING: This is still a draft
 1. Clone this repository in `$WORDPRESS_HOME$/wp-content/themes/gridcraft-child`
 1. Install plugins (see below)
  
-# Required plugins
+## Required plugins
 
  - Inherit Featured Image
  - Use Any Font
