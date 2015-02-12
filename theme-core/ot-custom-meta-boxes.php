@@ -10,7 +10,7 @@ function custom_meta_boxes_child() {
     /* ================= */
 
     $talent_options = array(
-        'id'        => 'talent_options',
+        'id'        => 'page_options',
         'title'     => 'Theme Talent Options',
         'desc'      => '',
         'pages'     => array( 'talent' ),
@@ -86,9 +86,8 @@ function custom_meta_boxes_child() {
                 'id'          => 'background_slider_toggle',
                 'label'       => 'Custom Background Slider',
                 'desc'        => 'Toggle whether you would like to use the background slider on this page or not.',
-                'std'         => 'off',
-                'type'        => 'select',
                 'std'         => 'on',
+                'type'        => 'select',
                 'choices'     => array(
                     array(
                         'value'       => 'off',
@@ -162,14 +161,10 @@ function custom_meta_boxes_child() {
                 'label'       => 'Background Slider : Thumbnail Opacity',
                 'desc'        => 'Set the opacity of the thumbnails. The theme will do the rest.',
                 'type'        => 'select',
-                'std'         => '0',
+                'std'         => 'pagination',
                 'condition'   => 'slider_mode:is(thumbnails)',
                 'choices'     => array(
                     array(
-                        'value'       => '0',
-                        'label'       => '0%',
-                    )
-                    ,array(
                         'value'       => '0.1',
                         'label'       => '10%',
                     ),
