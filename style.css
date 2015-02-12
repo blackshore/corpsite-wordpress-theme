@@ -85,17 +85,20 @@ nav ul.menu li .menu-item-title {
     display: none !important;
 }
 
-#site-navigation .menu .sub-menu a {
+#site-navigation .menu .sub-menu a,
+#responsive-nav .dl-submenu a,
+#responsive-nav .dl-submenu a:hover
+{
     font-size: 16px;
     padding: 1em 0 1em 60px;
     background-position: 21px center;
     background-repeat: no-repeat;
 }
-#site-navigation .spotlight a { background-image: url("images/menuicon-spotlight.png"); }
-#site-navigation .who a { background-image: url("images/menuicon-who.png"); }
-#site-navigation .why a { background-image: url("images/menuicon-why.png"); }
-#site-navigation .faq a { background-image: url("images/menuicon-faq.png"); }
-#site-navigation .join a { background-image: url("images/menuicon-join.png"); }
+.menu-item.spotlight a { background-image: url("images/menuicon-spotlight.png") !important; }
+.menu-item.who a { background-image: url("images/menuicon-who.png") !important; }
+.menu-item.why a { background-image: url("images/menuicon-why.png") !important; }
+.menu-item.faq a { background-image: url("images/menuicon-faq.png") !important; }
+.menu-item.join a { background-image: url("images/menuicon-join.png") !important; }
 
 /* SOCIAL */
 ul.social {
