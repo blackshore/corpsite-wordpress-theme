@@ -116,6 +116,55 @@ nav ul.menu li .menu-item-title {
 .menu-item.faq a { background-image: url("images/menuicon-faq.png") !important; }
 .menu-item.join a { background-image: url("images/menuicon-join.png") !important; }
 
+/* home page */
+.homepage-featured-item {
+    margin-top: 1em;
+    text-transform: lowercase;
+    padding: 0 !important;
+    background-color: #3c5e7c;
+}
+.homepage-featured-item .icon {
+    border-right: 1px solid #6285a4;
+    display: inline-block;
+    width: 83px;
+    height: 75px;
+    float: left;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.homepage-featured-item .titles {
+    text-align: right;
+    padding: 1.4em 1em 0 0;
+}
+
+.homepage-featured-item .link {
+    clear: both;
+    border-top: 1px solid #6285a4;
+    text-align: right;
+    padding: 5px 1em;
+}
+
+.homepage-featured-item h2 {
+    clear: none;
+    font-size: 19px;
+    font-weight: 300;
+    margin-bottom: 3px;
+}
+.homepage-featured-item h3 {
+    clear: none;
+    font-size: 13px;
+    font-weight: 100;
+}
+.homepage-featured-item .link a {
+    font-weight: 100;
+    display: inline-block;
+    padding-right: 38px;
+    background: url('images/home-featured-arrow.gif') no-repeat center right;
+}
+.homepage-featured-item.talent .icon { background-image: url('images/home-featured-icon-talent.gif'); }
+.homepage-featured-item.business .icon { background-image: url('images/home-featured-icon-business.gif'); }
+.homepage-featured-item.tech .icon { background-image: url('images/home-featured-icon-tech.gif'); }
+
 /* Talent grid */
 .talent-grid-title a {
     font-size: 1.5em;
@@ -191,4 +240,7 @@ ul.social img[title='You Tube'] {
 /* Phones */
 @media only screen and (max-width: 767px) {
     #primary {margin-top: 0 !important;}
+    .section-featured h1 {
+        font-size: 3em !important;
+    }
 }
