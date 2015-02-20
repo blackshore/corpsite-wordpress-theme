@@ -111,10 +111,18 @@ nav ul.menu li .menu-item-title {
     background-repeat: no-repeat;
 }
 .menu-item.spotlight a { background-image: url("images/menuicon-spotlight.png") !important; }
-.menu-item.who a { background-image: url("images/menuicon-who.png") !important; }
-.menu-item.why a { background-image: url("images/menuicon-why.png") !important; }
+.menu-item.business a { background-image: url("images/menuicon-business.png") !important; }
+.menu-item.casestudy a { background-image: url("images/menuicon-casestudy.png") !important; }
+.menu-item.contact a { background-image: url("images/menuicon-contact.png") !important; }
 .menu-item.faq a { background-image: url("images/menuicon-faq.png") !important; }
 .menu-item.join a { background-image: url("images/menuicon-join.png") !important; }
+.menu-item.leadership a { background-image: url("images/menuicon-leadership.png") !important; }
+.menu-item.news a { background-image: url("images/menuicon-news.png") !important; }
+.menu-item.spotlight a { background-image: url("images/menuicon-spotlight.png") !important; }
+.menu-item.talent a { background-image: url("images/menuicon-talent.png") !important; }
+.menu-item.tech a { background-image: url("images/menuicon-tech.png") !important; }
+.menu-item.who a { background-image: url("images/menuicon-who.png") !important; }
+.menu-item.why a { background-image: url("images/menuicon-why.png") !important; }
 
 /* home page */
 .homepage-featured-item {
