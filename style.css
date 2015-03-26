@@ -252,3 +252,50 @@ ul.social img[title='You Tube'] {
         font-size: 3em !important;
     }
 }
+
+/* COLOR TEXT (LINKS, etc.) */
+a:visited:hover,a:hover,a:focus,a:active{
+    color: white; }
+
+.theme_primary_color_text,
+a, a:visited,
+nav ul.menu li:hover .menu-item-title, nav ul.menu li.sfHover .menu-item-title,
+nav ul.menu li:hover .menu-item-subtitle, nav ul.menu li.sfHover .menu-item-subtitle,
+nav ul.menu li .menu-item-title:focus,
+#section-sub-footer a:hover{
+    color: #3c5e7c !important; }
+
+button, .button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    background-color: #3c5e7c !important;
+    border-color: #3c5e7c !important;
+    color: white; }
+
+#contact-submit:hover,
+#contact-submit:active,
+#contact-submit:focus {
+    background-color: #3c5e7c !important; }
+
+button:hover, button:focus, .button:hover, .button:focus,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover,
+input[type="button"]:focus,
+input[type="reset"]:focus,
+input[type="submit"]:focus {
+    color: white; }
+
+#sf_results #sf_val ul li.sf_selected {
+    background-color: #3c5e7c !important;
+    border-color: #3c5e7c !important;
+    color: #FFFFFF !important;   }
+
+/* COLOR BACKGROUNDS */
+.theme_primary_color_bg,
+.button,
+.tagcloud a,
+nav ul.menu ul li:hover, nav ul.menu ul li.sfHover,
+input[type="submit"]{
+    background-color: #3c5e7c !important; }
