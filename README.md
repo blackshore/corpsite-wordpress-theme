@@ -31,3 +31,11 @@ A new post type is bundled with the team and allows easy creation of new Talent 
 the custom fields (website URL, label and avatar) when editing the Talent form.
 
 To add a **spotlight** banner on top of the page, the tag `spotlight` has to be added to the Talent item.
+
+### Contact form styling
+
+To correctly style the contact form, the `submit` field should have it's element ID set to `contact-submit`, as such:
+
+```
+   <p>[submit id:contact-submit "Send"]</p>
+```
