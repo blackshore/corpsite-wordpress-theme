@@ -7,3 +7,9 @@ function theme_enqueue_styles() {
 
 require get_stylesheet_directory() . '/theme-core/theme-register-posttypes.php';
 load_template( trailingslashit( get_stylesheet_directory() ) . 'theme-core/ot-custom-meta-boxes.php' ); // Load Page/Post options.
+
+/* Hide that aweful Ajax loader in contact form */
+add_filter('wpcf7_ajax_loader', 'my_wpcf7_ajax_loader');
+function my_wpcf7_ajax_loader () {
+	return get_bloginfo('stylesheet_directory') . '/images/blank.png';
+}

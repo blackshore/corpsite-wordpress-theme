@@ -299,3 +299,7 @@ input[type="submit"]:focus {
 nav ul.menu ul li:hover, nav ul.menu ul li.sfHover,
 input[type="submit"]{
     background-color: #3c5e7c !important; }
+
+.wcf7 .ajax-loader {
+    display: none !important;
+}
