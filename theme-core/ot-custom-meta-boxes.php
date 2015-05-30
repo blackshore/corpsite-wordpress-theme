@@ -350,7 +350,34 @@ function custom_meta_boxes_child() {
     );
 
     /* ================= */
+    
+    
+    
+    /* ================= */
+
+    $partner_options = array(
+        'id'        => 'partner_options',
+        'title'     => 'Partner Meta',
+        'desc'      => '',
+        'pages'     => array( 'partner' ),
+        'context'   => 'normal',
+        'priority'  => 'high',
+        'fields'    => array(
+            array(
+                'label'       => 'Website URL',
+                'id'          => 'website_link_url',
+                'type'        => 'text',
+                'desc'        => 'URL to partner\'s website.',
+                'std'         => '',
+            ),          
+
+        )
+    );
+
+    /* ================= */
+    
 
     ot_register_meta_box( $talent_options );
+    ot_register_meta_box( $partner_options );
 }
 ?>

@@ -17,6 +17,7 @@
 * {
     font-family: 'Titillium Web','Helvetica Neue','Helvetica',Helvetica,Arial,sans-serif !important;
     color: white;
+    -webkit-font-smoothing: antialiased;
 }
 
 body, #primary, #secondary, h1, h2, h3, h4, h5, .entry-title, .entry-title a, .breadcrumbs, #page .widget-title {
@@ -24,6 +25,9 @@ body, #primary, #secondary, h1, h2, h3, h4, h5, .entry-title, .entry-title a, .b
 }
 
 a, a:visited, a:link, a:active, a:hover {
+    color: white;
+}
+a.action-link, a.action-link:visited, a.action-link:link, a.action-link:active{
     color: white !important;
 }
 #section-header .container {
@@ -38,6 +42,7 @@ a, a:visited, a:link, a:active, a:hover {
     font-weight: 100 !important;
     padding-bottom: 0 !important;
     border-bottom: none !important;
+    font-weight:normal !important;
 }
 
 article h1, .entry-title {
@@ -56,7 +61,10 @@ article h1, .entry-title {
 .bs-controls {
     display: none !important;
 }
-
+.home .vc_row{
+    margin-left:0 !important;
+    margin-right:0 !important;
+}
 /* Menus */
 button:hover, button:focus, .button:hover, .button:focus, input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover, input[type="button"]:focus, input[type="reset"]:focus, input[type="submit"]:focus, .dl-menuwrapper button {
     background-color: #3c5e7c !important;
@@ -107,11 +115,13 @@ nav ul.menu li .menu-item-title {
 {
     font-size: 16px;
     padding: 1em 0 1em 60px;
+    line-height:1;
     background-position: 21px center;
     background-repeat: no-repeat;
+    color: white !important;    
 }
 .menu-item.spotlight a { background-image: url("images/menuicon-spotlight.png") !important; }
-.menu-item.business a { background-image: url("images/menuicon-business.png") !important; }
+.menu-item.business a,.menu-item.partners a { background-image: url("images/menuicon-business.png") !important; }
 .menu-item.casestudy a { background-image: url("images/menuicon-casestudy.png") !important; }
 .menu-item.contact a { background-image: url("images/menuicon-contact.png") !important; }
 .menu-item.faq a { background-image: url("images/menuicon-faq.png") !important; }
@@ -119,7 +129,7 @@ nav ul.menu li .menu-item-title {
 .menu-item.leadership a { background-image: url("images/menuicon-leadership.png") !important; }
 .menu-item.news a { background-image: url("images/menuicon-news.png") !important; }
 .menu-item.spotlight a { background-image: url("images/menuicon-spotlight.png") !important; }
-.menu-item.talent a { background-image: url("images/menuicon-talent.png") !important; }
+.menu-item.talent a,.menu-item.services a { background-image: url("images/menuicon-talent.png") !important; }
 .menu-item.tech a { background-image: url("images/menuicon-tech.png") !important; }
 .menu-item.who a { background-image: url("images/menuicon-who.png") !important; }
 .menu-item.why a { background-image: url("images/menuicon-why.png") !important; }
@@ -168,6 +178,9 @@ nav ul.menu li .menu-item-title {
     display: inline-block;
     padding-right: 38px;
     background: url('images/home-featured-arrow.gif') no-repeat center right;
+}
+.homepage-featured-item a,.homepage-featured-item a:visited,.homepage-featured-item a:active{
+    color: white !important;
 }
 .homepage-featured-item.talent .icon { background-image: url('images/home-featured-icon-talent.gif'); }
 .homepage-featured-item.business .icon { background-image: url('images/home-featured-icon-business.gif'); }
@@ -258,7 +271,6 @@ a:visited:hover,a:hover,a:focus,a:active{
     color: white; }
 
 .theme_primary_color_text,
-a, a:visited,
 nav ul.menu li:hover .menu-item-title, nav ul.menu li.sfHover .menu-item-title,
 nav ul.menu li:hover .menu-item-subtitle, nav ul.menu li.sfHover .menu-item-subtitle,
 nav ul.menu li .menu-item-title:focus,
@@ -302,4 +314,20 @@ input[type="submit"]{
 
 .wcf7 .ajax-loader {
     display: none !important;
+}
+
+
+
+
+/*Partners Page */
+.vc_grid.vc_row .vc_grid-item .logo-thumb  .wpb_content_element{
+    margin-bottom:10px;
+}
+.logo-thumb .vc_custom_heading{
+    font-size:12px;
+    line-height:14px;
+    font-weight:normal;
+}
+.vc_gitem-post-meta-field-website_link_url{
+    display:none;
 }
