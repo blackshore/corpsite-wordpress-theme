@@ -34,7 +34,7 @@ a:hover {
 a.action-link, a.action-link:visited, a.action-link:link, a.action-link:active{
     color: white !important;
 }
-#section-header .container {
+#page #section-header .container, #section-header .container {
     background-color: #2f363c !important;
 }
 #section-header .sixteen{
@@ -250,10 +250,29 @@ ul.social img[title='You Tube'] {
 .talent-page h1 {
     max-width: 85%;
 }
+.talent-page .talent-avatar{
+    overflow:hidden;
+    width:200px;
+    height:200px;
+    border-radius:50%;
+    border:solid 5px #cbe6fe;
+}
+.talent-page .talent-avatar .img-border{
+    overflow:hidden;
+    width:190px;
+    height:190px;
+    border-radius:50%;
+    border:solid 3px #fff;
+}
+.talent-page .talent-avatar img{
+    width:100%;
+    min-height:100%;
+    height:auto;
+}
 .talent-page header h2 {
     clear: none !important;
     float: none !important;
-    margin-top: 1.2em;
+    margin-top: .5em;
 }
 .talent-page header h2 a {
     display: inline-block;
@@ -271,6 +290,16 @@ ul.social img[title='You Tube'] {
 }
 .talent-page header {
     margin: 2em 0;
+}
+.talent-page header .social-links{
+    margin-top: 1em;
+}
+.talent-page header .social-links .social-link{
+    margin-right: .75em;
+}
+.talent-page header .social-links .social-link img{
+    width:40px;
+    height:40px;
 }
 
 /* Desktops */
@@ -404,3 +433,13 @@ input[type="submit"]{
     }    
 }
 
+/*customizations for spotlight talent grid items */
+.vc_grid-item .title-bar{
+    background: #2f363c;
+}
+.vc_grid-item .title-bar a,.vc_grid-item .title-bar a:hover{
+    color: #fff;
+    display:block;
+    padding:5px 0;
+    text-decoration: none;
+}

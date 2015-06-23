@@ -26,13 +26,33 @@ get_header(); ?>
                     <h1>Blackshore talent spotlight</h1>
 
                     <header class="entry-header clearfix">
-                        <img id="talent-avatar" class="columns five" src="<?php echo get_custom_field( 'avatar' ); ?>" />
+			<div class="columns five">
+			    <div class="talent-avatar">
+				<div class="img-border">
+				    <img src="<?php echo get_custom_field( 'avatar' ); ?>" />
+				</div> 	
+			    </div>   
+			</div>                        
 
                         <div class="columns six">
                             <?php if(ot_get_option('show_title') != 'off') : ?>
                                 <h2><a href="<?php echo get_custom_field( 'website_link_url' ); ?>"><?php the_title(); ?></a></h2>
                             <?php endif; ?>
-                            <a id="website-link" href="<?php echo get_custom_field( 'website_link_url' ); ?>"><?php echo get_custom_field( 'website_link_label' ); ?></a>
+                            <a id="website-link" href="<?php echo get_custom_field( 'website_link_url' ); ?>" target="_blank"><?php echo get_custom_field( 'website_link_label' ); ?></a>
+			    <div class="social-links">
+				<?php if (get_custom_field( 'youtube_link_url' ) != '') : ?>
+				    <a class="social-link" href="<?php echo get_custom_field( 'youtube_link_url' ); ?>" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/youtube-logo_large.png" alt="YouTube"></a>
+				<?php endif; ?>
+				<?php if (get_custom_field( 'facebook_link_url' ) != '') : ?>
+				    <a class="social-link" href="<?php echo get_custom_field( 'facebook_link_url' ); ?>" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/facebook-logo_large.png" alt="Facebook"></a>
+				<?php endif; ?>
+				<?php if (get_custom_field( 'twitter_link_url' ) != '') : ?>
+				    <a class="social-link" href="<?php echo get_custom_field( 'twitter_link_url' ); ?>" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/twitter-logo_large.png" alt="Twitter"></a>
+				<?php endif; ?>
+				<?php if (get_custom_field( 'instagram_link_url' ) != '') : ?>
+				    <a class="social-link" href="<?php echo get_custom_field( 'instagram_link_url' ); ?>" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/instagram-logo_large.png" alt="Instagram"></a>
+				<?php endif; ?>
+			    </div>
                         </div>
                     </header>
 
