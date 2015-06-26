@@ -3,6 +3,7 @@
 /**
  * Initialize the meta boxes.
  */
+
 add_action( 'admin_init', 'custom_meta_boxes_child' );
 
 function custom_meta_boxes_child() {
@@ -65,7 +66,14 @@ function custom_meta_boxes_child() {
                 'type'        => 'text',
                 'desc'        => 'Link to Instagram page.',
                 'std'         => '',
-            ),   
+            ),
+            array(
+                'label'       => 'Talent Stats',
+                'id'          => 'stats_code',
+                'type'        => 'textarea',
+                'desc'        => 'Format: fill percentage - label;  (Separate multiple entries with semicolon) <br>Example:<br>40 - 400K followers; <br>60 - 200 million YT views; <br>90 - 1.2 million subscribers;',
+                'std'         => '',
+            ),
             array(
                 'label'       => 'Post Layout',
                 'id'          => 'content_layout',

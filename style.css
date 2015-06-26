@@ -34,6 +34,16 @@ a:hover {
 a.action-link, a.action-link:visited, a.action-link:link, a.action-link:active{
     color: white !important;
 }
+select.form-control{
+    width:100%;
+}
+select.form-control,
+#primary select.form-control,
+#primary select.form-control option{
+    color:#000 !important;
+}
+
+
 #page #section-header .container, #section-header .container {
     background-color: #2f363c !important;
 }
@@ -252,15 +262,15 @@ ul.social img[title='You Tube'] {
 }
 .talent-page .talent-avatar{
     overflow:hidden;
-    width:200px;
-    height:200px;
+    width:250px;
+    height:250px;
     border-radius:50%;
     border:solid 5px #cbe6fe;
 }
 .talent-page .talent-avatar .img-border{
     overflow:hidden;
-    width:190px;
-    height:190px;
+    width:240px;
+    height:240px;
     border-radius:50%;
     border:solid 3px #fff;
 }
@@ -273,6 +283,7 @@ ul.social img[title='You Tube'] {
     clear: none !important;
     float: none !important;
     margin-top: .5em;
+    margin-bottom: 0;
 }
 .talent-page header h2 a {
     display: inline-block;
@@ -281,6 +292,9 @@ ul.social img[title='You Tube'] {
     border-bottom: 1px solid rgba(255,255,255,0.2);
     font-weight: 200 !important;
     letter-spacing: 1px !important;
+}
+.talent-page header h2 a:hover{
+    text-decoration:none;
 }
 .talent-page header #website-link {
     text-transform: uppercase;
@@ -295,13 +309,51 @@ ul.social img[title='You Tube'] {
     margin-top: 1em;
 }
 .talent-page header .social-links .social-link{
-    margin-right: .75em;
+    margin: 0 10px 0 0;
 }
 .talent-page header .social-links .social-link img{
     width:40px;
     height:40px;
 }
-
+.talent-page header .stats{
+    margin-top: 1em;
+    overflow:hidden;
+    width:100px;
+}
+.talent-page header .stats .stat-label{
+    display:block;
+    height:20px;
+    line-height:20px;
+    font-size:12px;
+    color:#fff;
+    padding:0;
+    margin-bottom:2px;
+    text-align: right;
+    overflow:hidden;
+}
+.talent-page header .stats .stat-label label{
+    display:none;
+    color:#fff;
+    padding-right: 10px;
+}
+.talent-page header .stats .label-0{
+    background: #3c5e7c;
+}
+.talent-page header .stats .label-1{
+    background: #446b8d;
+}
+.talent-page header .stats .label-2{
+    background: #4d79a0;
+}
+.talent-page header .stats .label-3{
+    background: #5789b5;
+}
+.talent-page header .stats .label-4{
+    background: #639bca;
+}
+.talent-page header .stats .label-5{
+    background: #70afdd;
+}
 /* Desktops */
 @media only screen and (min-width: 768px) {
     #page {
@@ -442,4 +494,17 @@ input[type="submit"]{
     display:block;
     padding:5px 0;
     text-decoration: none;
+}
+.vc_grid-item-mini {
+    position:relative;
+    z-index:1500;
+    -moz-transition:-moz-transform 0.2s ease-in; 
+    -webkit-transition:-webkit-transform 0.2s ease-in; 
+    -o-transition:-o-transform 0.2s ease-in;
+}
+.vc_grid-item-mini:hover{
+    cursor:pointer;
+    -moz-transform:scale(1.05); 
+    -webkit-transform:scale(1.05);
+    -o-transform:scale(1.05);
 }
