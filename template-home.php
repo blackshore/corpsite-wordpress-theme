@@ -45,7 +45,7 @@ get_header(); ?>
             $meta = get_post_meta( $page->ID );
 
             ?>
-            <div class="columns five offset-by-one icon-graphic">
+            <div class="columns five icon-graphic">
                 <div class="homepage-featured-item <?php echo @$meta['homepage_cssclass'][0]; ?>">
                     <div class="icon"></div>
                     <div class="titles">
