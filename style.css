@@ -91,6 +91,7 @@ article h1, .entry-title {
     font-weight: 200 !important;
     padding-bottom: 0.3em !important;
     border-bottom: 1px solid rgba(155,155,155,0.4) !important;
+    text-shadow: 1px 1px 1px #000;
 }
 
 /* Disable stuff */
@@ -334,11 +335,13 @@ ul.social img[title='You Tube'] {
     border-bottom: 1px solid rgba(255,255,255,0.2);
     font-weight: 200 !important;
     letter-spacing: 1px !important;
+    text-shadow: 2px 2px 1px #000;
 }
 .talent-page header h2 a:hover{
     text-decoration:none;
 }
 .talent-page header #website-link {
+    text-shadow: 1px 1px 1px #000;
     text-transform: uppercase;
 }
 .talent-page header #website-link:before {
@@ -395,6 +398,9 @@ ul.social img[title='You Tube'] {
 }
 .talent-page header .stats .label-5{
     background: #70afdd;
+}
+.entry-content {
+    text-shadow: 1px 1px 1px #000;
 }
 
 @media (max-width:1024px){

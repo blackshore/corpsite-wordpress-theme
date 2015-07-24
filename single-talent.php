@@ -42,16 +42,16 @@ get_header(); ?>
 			    
 			    <div class="social-links">
 				<?php if (get_custom_field( 'youtube_link_url' ) != '') : ?>
-				    <a class="social-link" href="<?php echo get_custom_field( 'youtube_link_url' ); ?>" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/youtube-logo_large.png" alt="YouTube"></a>
+				    <a class="social-link" href="<?php echo get_custom_field( 'youtube_link_url' ); ?>" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/youtube-logo_large_shadow.png" alt="YouTube"></a>
 				<?php endif; ?>
 				<?php if (get_custom_field( 'facebook_link_url' ) != '') : ?>
-				    <a class="social-link" href="<?php echo get_custom_field( 'facebook_link_url' ); ?>" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/facebook-logo_large.png" alt="Facebook"></a>
+				    <a class="social-link" href="<?php echo get_custom_field( 'facebook_link_url' ); ?>" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/facebook-logo_large_shadow.png" alt="Facebook"></a>
 				<?php endif; ?>
 				<?php if (get_custom_field( 'twitter_link_url' ) != '') : ?>
-				    <a class="social-link" href="<?php echo get_custom_field( 'twitter_link_url' ); ?>" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/twitter-logo_large.png" alt="Twitter"></a>
+				    <a class="social-link" href="<?php echo get_custom_field( 'twitter_link_url' ); ?>" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/twitter-logo_large_shadow.png" alt="Twitter"></a>
 				<?php endif; ?>
 				<?php if (get_custom_field( 'instagram_link_url' ) != '') : ?>
-				    <a class="social-link" href="<?php echo get_custom_field( 'instagram_link_url' ); ?>" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/instagram-logo_large.png" alt="Instagram"></a>
+				    <a class="social-link" href="<?php echo get_custom_field( 'instagram_link_url' ); ?>" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/instagram-logo_large_shadow.png" alt="Instagram"></a>
 				<?php endif; ?>
 			    </div>
 			    
