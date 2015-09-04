@@ -43,8 +43,7 @@ select.form-control,
     color:#000 !important;
 }
 
-
-#page #section-header .container, #section-header .container {
+#page #section-header .container, #section-header .container, #section-sub-footer, #section-sub-footer .stripe_background {
     background-color: #2f363c !important;
 }
 #section-header, #section-header .sixteen{
@@ -95,11 +94,19 @@ article h1, .entry-title {
 }
 
 /* Disable stuff */
-#primary-toggle, footer {
+#primary-toggle {
     display: none !important;
 }
 .bs-controls {
     display: none !important;
+}
+#section-sub-footer .copyright {
+    display:none;
+}
+#section-sub-footer {
+    font-weight: 100;
+    height: auto !important;
+    line-height: inherit !important;
 }
 .home .vc_row{
     margin-left:0 !important;
@@ -139,7 +146,7 @@ nav ul.menu .sub-menu li{
 {
     color: white !important;
 }
-#site-navigation .menu-item-title {
+#site-navigation .menu-item-title, footer {
     text-transform: lowercase !important;
 }
 #site-navigation .menu .sub-menu {
@@ -258,7 +265,7 @@ nav ul.menu .sub-menu li{
 
 /* SOCIAL */
 ul.social {
-    margin-top: 10em !important;
+    margin-top: 6em !important;
     padding-right: 2.5rem;
 }
 ul.social li {
@@ -436,14 +443,14 @@ ul.social img[title='You Tube'] {
 
 /* COLOR TEXT (LINKS, etc.) */
 a:visited:hover,a:hover,a:focus,a:active{
-    color: white; }
+    color: white !important; }
 
 .theme_primary_color_text,
 nav ul.menu li:hover .menu-item-title, nav ul.menu li.sfHover .menu-item-title,
 nav ul.menu li:hover .menu-item-subtitle, nav ul.menu li.sfHover .menu-item-subtitle,
 nav ul.menu li .menu-item-title:focus,
-#section-sub-footer a:hover{
-    color: #3c5e7c !important; }
+#section-sub-footer .menu-footer-menu-container {
+    margin-left: 0 !important;}
 
 button, .button,
 input[type="button"],
@@ -591,7 +598,7 @@ input[type="submit"]{
 /* OVERWRITES FOR RESPONSIVE WIDTH SETTINGS SET IN PARENT THEME */
 /* Tablets & Desktops */
 @media only screen and (min-width: 1024px) {
-	body{overflow: hidden;} 
+	body{overflow: hidden;}
 
 	/* POSITIONING FOR SLIDE EFFECTS */
 	#section-header, #section-content{
@@ -604,6 +611,28 @@ input[type="submit"]{
 			}
 
 	.bgslide_caption{max-width: 30%;}
+
+    #page {
+        position: relative !important;
+    }
+    #section-sub-footer {
+        position: absolute !important;
+        bottom: 0 !important;
+    }
+    #section-sub-footer ul.social {
+        display: none;
+    }
+    #section-sub-footer, #section-sub-footer li {
+        width: 25rem !important;
+    }
+    #section-sub-footer li {
+        text-align: right !important;
+        margin-right: 0 !important;
+        padding-right: 40px;
+    }
+    #section-sub-footer li a {
+        font-weight: normal !important;
+    }
 }
 
 /* Tablets & Desktops */
@@ -635,7 +664,18 @@ input[type="submit"]{
 
 /* Phones */
 @media only screen and (max-width: 1023px) {
+    #section-content {
+        padding-bottom: 4em;
+    }
+    #section-sub-footer {
+        position: fixed !important;
+    }
 
+    #section-sub-footer ul.social {
+        padding-top: 0 !important;
+        padding-bottom: 3px !important;
+        margin-top: 0 !important;
+    }
 	.bgslide_caption{max-width: 95%;}
 
 	#section-header, #section-content{
@@ -707,18 +747,13 @@ input[type="submit"]{
 		html, body, #page, #section-content, .container, .sixteen, #primary, #secondary {
 	    height: auto;
 		}
-		#section-sub-footer .menu-footer-menu-container{display: none;}
+		#section-sub-footer .menu-footer-menu-container{display: block !important;}
 		#section-sub-footer ul.social li {margin-right: 2px;}
 
 	.module.columns, .module.column{width: 50% !important;}
 		.module-inner > a {display: none; visibility: hidden;}
 		#primary-toggle {
-		    bottom: 1.1rem;
-		    left: auto;
-		    position: fixed;
-		    right: 1.9rem;
-		    display: block;
-			}
+		    display: none !important; }
 			.module-inner:focus > a, .module-inner:hover > a, .module-inner:active > a {display: block; visibility: visible;}
 		.module.hover-text .module-content-inner{max-height: 80%;}
 
@@ -746,13 +781,17 @@ input[type="submit"]{
 	#section-header{display: block !important;}
 }
 
-
-
 @media only screen and (max-width: 1023px) and (min-width: 480px){
     .container .columns.five{
         width: 100% !important;
     }
 }
+
+/* small phones */
+@media only screen and (max-width: 767px) {
+
+}
+
 
 
 
