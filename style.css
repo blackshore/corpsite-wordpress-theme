@@ -623,7 +623,7 @@ input[type="submit"]{
         display: none;
     }
     #section-sub-footer, #section-sub-footer li {
-        width: 25rem !important;
+        width: 30rem !important;
     }
     #section-sub-footer li {
         text-align: right !important;
@@ -785,11 +785,6 @@ input[type="submit"]{
     .container .columns.five{
         width: 100% !important;
     }
-}
-
-/* small phones */
-@media only screen and (max-width: 767px) {
-
 }
 
 
