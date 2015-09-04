@@ -670,6 +670,9 @@ input[type="submit"]{
     #section-sub-footer {
         position: fixed !important;
     }
+    #section-sub-footer .menu-footer-menu-container {
+        padding-bottom: 10px;
+    }
 
     #section-sub-footer ul.social {
         padding-top: 0 !important;
