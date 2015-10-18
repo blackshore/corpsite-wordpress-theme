@@ -2,6 +2,13 @@
 
 The theme is based on _Gridcraft WP theme version 1.2.0_.
 
+## How to deploy?
+
+The corporate Wordpress install is setup with a plugin called "WP Pusher". A Github webhook is
+configured to notify the Wordpress install whenever we push to the `master` branch. There should
+be no other deployment step than pushing to this Github repository. In case that fails, it is
+possible to update the theme manually using the Wordpress dashboard "WP Pusher" section.
+
 ## How to work on the theme locally?
 
 WARNING: This is still a draft
@@ -15,6 +22,7 @@ WARNING: This is still a draft
  
 ## Required plugins
 
+ - WP Pusher (must be downloaded from https://wppusher.com/download and installed manually)
  - Inherit Featured Image
  
 ## Random notes 
